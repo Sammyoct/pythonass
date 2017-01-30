@@ -1,0 +1,17 @@
+#!/usr/bin/python
+
+def chk_len(a):
+    x = 0
+    for c in a:
+        x = x+1
+     
+    return x
+
+def get_start():
+    x = 0 
+    var1 = raw_input("Please enter string: ")
+    print "you entered", var1
+    x = chk_len(var1)
+    print "Length ==> ", x
+
+get_start()
