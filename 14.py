@@ -1,5 +1,5 @@
 #!/usr/bin/python
-
+"""Write a program that maps a list of words into a list of integers representing the lengths of the correponding words."""
 
 def get_input():
     a = raw_input("Please enter the number to repeat character:")

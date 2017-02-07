@@ -1,5 +1,5 @@
 #!/usr/bin/python
-
+'''Define a function is_palindrome() that recognizes palindromes (i.e. words that look the same written backwards). For example, is_palindrome("radar") should return True.'''
 def get_start():
     b = raw_input("Please entering the string:")
     print "you have entered string", b

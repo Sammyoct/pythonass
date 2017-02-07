@@ -1,5 +1,5 @@
 #!/usr/bin/python
-
+'''Write a function that takes a character (i.e. a string of length 1) and returns True if it is a vowel, False otherwise.'''
 def chk_vowel(a):
     vowel = ['a','e','i','o','u']
     for char in vowel:

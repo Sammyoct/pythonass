@@ -1,5 +1,5 @@
 #!/usr/bin/python
-
+'''Define a function reverse() that computes the reversal of a string. For example, reverse("I am testing") should return the string "gnitset ma I".'''
 def get_start():
     a = "I am testing"
     s = list(a)
