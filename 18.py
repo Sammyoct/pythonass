@@ -2,8 +2,16 @@
 
 import string
 
+def is_pangram(phrase):
+    alphabet = "abcdefghijklmnopqrstuvwxyz"
+    for char in alphabet:
+        if char not in phrase:
+            return False
+
+    return True
+
 def get_start():
-    b = raw_input("Please entering the string:")
+    b = raw_input("Please enter the string:")
     print "you have entered string", b
 
     index = 0
@@ -19,16 +27,11 @@ def get_start():
     a = a.lower()
 
     s = list(a)
-    j = []
 
-    for x in reversed(s):
-        j.append(x)
 
-    n = "".join(str(x) for x in j)
-
-    if n == a:
-        print("Yes given string is palindrome")
+    if is_pangram(s):
+        print("Yes given string is pangram")
     else:
-        print("No given string is not palindrome")
+        print("No given string is not pangram")
 
 get_start()
