@@ -1,0 +1,177 @@
+diff --git a/2.py b/2.py
+index 616c30f..eeb4f15 100755
+--- a/2.py
++++ b/2.py
+@@ -2,6 +2,7 @@
+ 
+ """Define a function max_of_three() that takes three numbers as arguments and returns the largest of them."""
+ 
++
+ def max_val(a, b):
+     """ Function to return if a is greater than b """
+     if a < b:
+@@ -11,6 +12,7 @@ def max_val(a, b):
+     elif b == a:
+         return "Equal"
+ 
++
+ def max_val_three(a, b, c):
+     """ Function get value max out of three"""
+     m = 0
+@@ -32,8 +34,9 @@ def max_val_three(a, b, c):
+         m = m
+     return m
+ 
++
+ def get_start():
+-    x = False 
++    x = False
+     var1 = raw_input("Please enter something var1: ")
+     print "you entered", var1
+     var2 = raw_input("Please enter something var2: ")
+@@ -41,6 +44,6 @@ def get_start():
+     var3 = raw_input("Please enter something var3: ")
+     print "you entered", var3
+     x = max_val_three(var1, var2, var3)
+-    print "max value ==> "+ x
++    print "max value ==> " + x
+ 
+ get_start()
+diff --git a/3.py b/3.py
+index 5855315..99dbc2f 100755
+--- a/3.py
++++ b/3.py
+@@ -1,14 +1,17 @@
+ #!/usr/bin/python\
+ '''Define a function that computes the length of a given list or string. (It is true that Python has the len() function built in, but writing it yourself is nevertheless a good exercise.)'''
+ """Get the lengtih of string manualy"""
++
++
+ def chk_len(a):
+     """Function to find the length of the passed streing."""
+     x = 0
+     for c in a:
+-        x = x+1
++        x = x + 1
+ 
+     return x
+ 
++
+ def get_start():
+     x = 0
+     var1 = raw_input("Please enter string: ")
+diff --git a/4.py b/4.py
+index 48ce3cf..fb51799 100755
+--- a/4.py
++++ b/4.py
+@@ -1,13 +1,16 @@
+ #!/usr/bin/python
+ '''Write a function that takes a character (i.e. a string of length 1) and returns True if it is a vowel, False otherwise.'''
++
++
+ def chk_vowel(a):
+-    vowel = ['a','e','i','o','u']
++    vowel = ['a', 'e', 'i', 'o', 'u']
+     for char in vowel:
+-         if char in a:
+-             return True 
+-             
++        if char in a:
++            return True
++
+     return False
+ 
++
+ def get_start():
+     x = False
+     a = raw_input("Please enter only one character:")
+@@ -18,6 +21,6 @@ def get_start():
+ 
+     x = chk_vowel(a)
+     print x
+-    
++
+ 
+ get_start()
+diff --git a/5.py b/5.py
+index d523c58..bb11e34 100644
+--- a/5.py
++++ b/5.py
+@@ -1,13 +1,15 @@
+ #!/usr/bin/python
+ """Write a function translate() that will translate a text into "rövarspråket" (Swedish for "robber's language"). That is, double every consonant and place an occurrence of "o" in between. For example, translate("this is fun")should return the string "tothohisos isos fofunon"."""
+ 
++
+ def get_input():
+     b = raw_input("Please enter string to convert into robbers language:")
+     return b
+ 
++
+ def get_start():
+     s = get_input()
+-    vowels = ['a','e','i','o','u']
++    vowels = ['a', 'e', 'i', 'o', 'u']
+     s = list(s)
+ 
+     j = []
+@@ -25,6 +27,3 @@ def get_start():
+ 
+ 
+ get_start()
+-    
+-    
+-   
+diff --git a/6.py b/6.py
+index e3dac23..0a42bcf 100755
+--- a/6.py
++++ b/6.py
+@@ -1,38 +1,42 @@
+ #!/usr/bin/python
+ '''Define a function sum() and a function multiply() that sums and multiplies (respectively) all the numbers in a list of numbers. For example, sum([1, 2, 3, 4]) should return 10, and multiply([1, 2, 3, 4]) should return 24.'''
+ 
++
+ def sum_(a):
+     x = 0
+     for char in a:
+-        x = x + char         
++        x = x + char
+     return x
+ 
++
+ def multiply_(b):
+     x = 1
+     for char in b:
+         x = x * char
+     return x
+ 
++
+ def get_input():
+     b = int(raw_input("Please enter list:"))
+-    print "You have entered list as of ",b    
++    print "You have entered list as of ", b
+     return b
+-   
++
++
+ def get_start():
+     a = []
+-    
++
+     s = raw_input("End of list press n")
+     while s != 'n':
+-        g = get_input()    
++        g = get_input()
+         a.append(g)
+ 
+     for j in a:
+         print(j)
+-    
++
+     x = sum_(a)
+     y = multiply_(a)
+     print "Sum is ===> ", x
+     print "Multiply  is ===> ", y
+-    
++
+ 
+ get_start()
